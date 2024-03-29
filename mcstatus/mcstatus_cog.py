@@ -17,7 +17,7 @@ class MinecraftCog(commands.Cog):
         # Stop the task when the cog is unloaded
         self.update_server_status.cancel()
 
-    @tasks.loop(seconds=server_query_interval)
+    @tasks.loop(seconds=300)  # Fixed the reference to server_query_interval
     async def update_server_status(self):
         for server_address, channel_id in zip(self.server_addresses, self.server_status_channel_ids):
             try:
