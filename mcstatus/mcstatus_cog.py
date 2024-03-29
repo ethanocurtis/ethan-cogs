@@ -5,8 +5,6 @@ import asyncio
 
 class MinecraftCog(commands.Cog):
     def __init__(self, bot):
-class MinecraftCog(commands.Cog):
-    def __init__(self, bot):
         self.bot = bot
         self.server_status_channel_ids = [123456789012345678] # Default channel IDs
         self.server_addresses = ["YOUR_MINECRAFT_SERVER_IP"] # Default server IPs
