@@ -54,11 +54,6 @@ class MinecraftCog(commands.Cog):
         await self.bot.wait_until_ready()
         self.update_server_status.change_interval(seconds=self.server_query_interval)
 
-
-def setup(bot):
-    bot.add_cog(MinecraftCog(bot))
-
-
     @commands.command()
     async def server_status(self, ctx):
         for server_address, channel_id in zip(self.server_addresses, self.server_status_channel_ids):
