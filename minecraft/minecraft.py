@@ -64,7 +64,8 @@ class MCPlayer:
 @cog_i18n(_)
 class Minecraft(commands.Cog):
     def __init__(self, bot: commands.Bot) -> None:
-        super().__init__(bot=bot)
+        super().__init__(bot)
+
 
         self._session: aiohttp.ClientSession = None
         self.cache: typing.Dict[int, typing.Dict[str, dict]] = {}
