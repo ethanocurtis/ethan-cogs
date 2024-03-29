@@ -1,0 +1,10 @@
+{
+    "name": "mcstatus",
+    "description": "A Red Discord Bot cog for displaying Minecraft server status.",
+    "author": "Ethan Curtis",
+    "version": "1.0",
+    "min_bot_version": "3.0.0",
+    "required_cogs": [],
+    "required_repositories": [],
+    "install_msg": "Successfully installed the mcstatus cog! Use !mcstatus command to check Minecraft server status."
+}
