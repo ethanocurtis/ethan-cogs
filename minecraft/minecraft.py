@@ -63,8 +63,9 @@ class MCPlayer:
 
 @cog_i18n(_)
 class Minecraft(commands.Cog):
-    def __init__(self, bot: Red, *args, **kwargs) -> None:
-        super().__init__(bot=bot)
+    def __init__(self, bot: Red) -> None:
+        super().__init__(bot)
+
 
 
 
