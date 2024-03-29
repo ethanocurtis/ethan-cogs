@@ -5,9 +5,9 @@ import mcstatus
 class MinecraftCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.server_status_channel_ids = [123456789012345678] # Default channel IDs
-        self.server_addresses = ["YOUR_MINECRAFT_SERVER_IP"] # Default server IPs
-        self.server_query_interval = 300 # in seconds (5 minutes)
+        self.server_status_channel_ids = [123456789012345678]  # Default channel IDs
+        self.server_addresses = ["YOUR_MINECRAFT_SERVER_IP"]  # Default server IPs
+        self.server_query_interval = 300  # in seconds (5 minutes)
 
         # Start a task to periodically update the server status
         self.update_server_status.start()
