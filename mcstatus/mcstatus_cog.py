@@ -1,4 +1,11 @@
+import discord
+from discord.ext import commands, tasks
+import mcstatus
+import asyncio
+
 class MinecraftCog(commands.Cog):
+    def __init__(self, bot):
+        class MinecraftCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.server_status_channel_ids = [123456789012345678] # Default channel IDs
